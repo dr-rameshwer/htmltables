@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML5 Form Example</title>
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif, Courier New, Courier, monospace;
+      background: #fae9e9;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    "
+  >
+    <!-- Form Container -->
+    <form
+      style="
+        background: #daf4f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+      "
+    >
+      <h2 style="text-align: center; color: #333">Registration Form</h2>
+
+      <!-- Text Input -->
+      <label for="name" style="display: block; margin-bottom: 5px"
+        >Full Name:</label
+      >
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        style="width: 100%; padding: 8px; margin-bottom: 10px"
+        required
+      />
+      <!-- 'required' makes this field mandatory -->
+
+      <!-- Email Input -->
+      <label for="email" style="display: block; margin-bottom: 5px"
+        >Email:</label
+      >
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        style="width: 100%; padding: 8px; margin-bottom: 10px"
+        required
+      />
+
+      <!-- Password Input -->
+      <label for="password" style="display: block; margin-bottom: 5px"
+        >Password:</label
+      >
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter password"
+        style="width: 100%; padding: 8px; margin-bottom: 10px"
+        required
+      />
+
+      <!-- Number Input -->
+      <label for="age" style="display: block; margin-bottom: 5px">Age:</label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        min="18"
+        max="100"
+        style="width: 100%; padding: 8px; margin-bottom: 10px"
+      />
+      <!-- min and max restrict the age range -->
+
+      <!-- Date Picker -->
+      <label for="dob" style="display: block; margin-bottom: 5px"
+        >Date of Birth:</label
+      >
+      <input
+        type="date"
+        id="dob"
+        name="dob"
+        style="width: 100%; padding: 8px; margin-bottom: 10px"
+      />
+
+      <!-- File Upload -->
+      <label for="resume" style="display: block; margin-bottom: 5px"
+        >Upload Resume:</label
+      >
+      <input
+        type="file"
+        id="resume"
+        name="resume"
+        style="width: 100%; margin-bottom: 10px"
+      />
+
+      <!-- Radio Buttons -->
+      <p style="margin-bottom: 5px">Gender:</p>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label>
+
+      <!-- Checkbox -->
+      <p style="margin: 10px 0 5px">Hobbies:</p>
+      <input type="checkbox" id="reading" name="hobbies" value="reading" />
+      <label for="reading">Reading</label>
+      <input type="checkbox" id="traveling" name="hobbies" value="traveling" />
+      <label for="traveling">Traveling</label>
+      <input type="checkbox" id="sports" name="hobbies" value="sports" />
+      <label for="sports">Sports</label>
+
+      <!-- Dropdown -->
+      <label for="country" style="display: block; margin: 10px 0 5px"
+        >Country:</label
+      >
+      <select
+        id="country"
+        name="country"
+        style="width: 100%; padding: 8px; margin-bottom: 10px"
+      >
+        <option value="">--Select Country--</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="australia">Australia</option>
+      </select>
+
+      <!-- Textarea -->
+      <label for="message" style="display: block; margin-bottom: 5px"
+        >Your Message:</label
+      >
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Write something..."
+        style="width: 100%; padding: 8px; height: 80px; margin-bottom: 10px"
+      ></textarea>
+
+      <!-- Range Slider -->
+      <label for="satisfaction" style="display: block; margin-bottom: 5px"
+        >Satisfaction Level:</label
+      >
+      <input
+        type="range"
+        id="satisfaction"
+        name="satisfaction"
+        min="0"
+        max="10"
+        style="width: 100%; margin-bottom: 10px"
+      />
+
+      <!-- URL Input -->
+      <label for="website" style="display: block; margin-bottom: 5px"
+        >Your Website:</label
+      >
+      <input
+        type="url"
+        id="website"
+        name="website"
+        placeholder="https://example.com"
+        style="width: 100%; padding: 8px; margin-bottom: 10px"
+      />
+
+      <!-- Color Picker -->
+      <label for="favcolor" style="display: block; margin-bottom: 5px"
+        >Favorite Color:</label
+      >
+      <input
+        type="color"
+        id="favcolor"
+        name="favcolor"
+        style="width: 100%; height: 40px; margin-bottom: 10px"
+      />
+
+      <!-- Submit Button -->
+      <button
+        type="submit"
+        style="
+          width: 100%;
+          background: #4caf50;
+          color: #fff;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        "
+      >
+        Submit
+      </button>
+    </form>
+  </body>
+</html>
